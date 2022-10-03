@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, session
 
 import ibm_db
 import bcrypt
-conn = ibm_db.connect("DATABASE=bludb;HOSTNAME=9938aec0-8105-433e-8bf9-0fbb7e483086.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud;PORT=32459;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt;UID=yvp21124;PWD=lQDT8D9R5TUxV0AO",'','')
+conn = ibm_db.connect("DATABASE=bludb;HOSTNAME=;PORT=;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt;UID=;PWD=",'','')
 
 
 # url_for('static', filename='style.css')
