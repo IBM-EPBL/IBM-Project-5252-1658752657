@@ -15,17 +15,6 @@ A Smart Application that recommend products based on user preferences.
 B5-5M1E
 
 
-
-## Uploading Task
-
-To upload your task
-
-<b><i>projectDesign&Planning > {Your Name} > {task file}</i></b>
-
-Task name format: taskNo taskName (Task No and name available in project schedule)
-
-Example: 2.1 Literature Survey
-
 ## Uploading Assignment
 
 To upload your task
