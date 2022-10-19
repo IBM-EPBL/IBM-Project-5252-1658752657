@@ -22,8 +22,8 @@ PNT2022TMID01237
 
 - Team Leader (Abhishek AR)
 - Team Member 1 (Charan DP)
-- Team Member 1 (Devendran V)
-- Team Member 1 (Hari Krishnan N)
+- Team Member 2 (Devendran V)
+- Team Member 3 (Hari Krishnan N)
 
 ## Uploading Assignment
 
