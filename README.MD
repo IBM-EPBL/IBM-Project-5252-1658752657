@@ -4,15 +4,15 @@ A Smart Application that recommend products based on user preferences.
 
 ## 🔗 Links
 
-[Project Design and Planning](https://github.com/IBM-EPBL/IBM-Project-5252-1658752657/tree/main/Project%20Design%20%26%20Planning)
+- [Project Design and Planning](https://github.com/IBM-EPBL/IBM-Project-5252-1658752657/tree/main/Project%20Design%20%26%20Planning)
 
-[Assignments](https://github.com/IBM-EPBL/IBM-Project-5252-1658752657/tree/main/Assignments)
+- [Assignments](https://github.com/IBM-EPBL/IBM-Project-5252-1658752657/tree/main/Assignments)
  1. [Abhishek AR](https://github.com/IBM-EPBL/IBM-Project-5252-1658752657/tree/main/Assignments/Abhishek%20A%20R%20(Team%20Lead))
  2. [Charan DP](https://github.com/IBM-EPBL/IBM-Project-5252-1658752657/tree/main/Assignments/Charan%20D%20P%20(Team%20Member%201)) 
  3. [Devendran V](https://github.com/IBM-EPBL/IBM-Project-5252-1658752657/tree/main/Assignments/Devendran%20V%20(Team%20Member%202))
  4. [Hari Krishnan N](https://github.com/IBM-EPBL/IBM-Project-5252-1658752657/tree/main/Assignments/Hari%20Krishnan%20N%20(Team%20Member%203))
 
-[Project Development Phase](https://github.com/IBM-EPBL/IBM-Project-5252-1658752657/tree/main/Project%20Development%20Phase)
+- [Project Development Phase](https://github.com/IBM-EPBL/IBM-Project-5252-1658752657/tree/main/Project%20Development%20Phase)
 
 ## Batch
 
