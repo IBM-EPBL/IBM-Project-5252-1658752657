@@ -20,10 +20,10 @@ PNT2022TMID01237
 
 ## TEAM MEMBERS
 
-- Team Leader ( [Abhishek AR] (https://github.com/abhishekar10) )
-- Team Member 1 ( [Charan DP] (https://github.com/charanpy) )
-- Team Member 2 ( [Devendran V] (https://github.com/vemuladevendran) )
-- Team Member 3 ( [Hari Krishnan N] (https://github.com/harikrishnanvemula) )
+- [Abhishek AR] (https://github.com/abhishekar10) Team Leader
+- [Charan DP] (https://github.com/charanpy) Team Member 1 
+- [Devendran V] (https://github.com/vemuladevendran) Team Member 2
+- [Hari Krishnan N] (https://github.com/harikrishnanvemula) Team Member 3 
 
 ## Uploading Assignment
 
