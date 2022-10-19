@@ -2,7 +2,8 @@
 
 A Smart Application that recommend products based on user preferences.
 
-![Chatbot-use-cases](https://user-images.githubusercontent.com/66424913/196593635-a221e123-de86-48e9-9930-79bd9c61037c.jpg)
+
+![Chatbot](https://user-images.githubusercontent.com/66424913/196593698-6cc57a07-d1a7-4bc5-a00a-0a2fd75fce7b.jpg)
 
 ## 🔗 Links
 
