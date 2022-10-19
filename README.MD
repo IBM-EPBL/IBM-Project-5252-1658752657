@@ -2,9 +2,6 @@
 
 A Smart Application that recommend products based on user preferences.
 
-
-![Chatbot](https://user-images.githubusercontent.com/66424913/196593698-6cc57a07-d1a7-4bc5-a00a-0a2fd75fce7b.jpg)
-
 ## 🔗 Links
 
 [Project Design and Planning](https://github.com/IBM-EPBL/IBM-Project-5252-1658752657/tree/main/Project%20Design%20%26%20Planning)
@@ -19,7 +16,7 @@ B5-5M1E
 
 ## TEAM ID 
 
-PNT2022TMID01237
+# PNT2022TMID01237
 
 ## TEAM MEMBERS
 
