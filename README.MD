@@ -1,7 +1,8 @@
 # Smart Fashion Recommender
 
 A Smart Application that recommend products based on user preferences.
-![Chatbot-use-cases](https://user-images.githubusercontent.com/66424913/196593532-ab9b4df8-c48b-4b77-bde5-04e99f928234.jpg)
+
+![Chatbot-use-cases](https://user-images.githubusercontent.com/66424913/196593635-a221e123-de86-48e9-9930-79bd9c61037c.jpg)
 
 ## 🔗 Links
 
