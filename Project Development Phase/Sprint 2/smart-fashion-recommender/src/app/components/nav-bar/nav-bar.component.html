@@ -1,14 +1,15 @@
-<section class="container-fluid">
+<section class="container-fluid nav-bar">
     <div class="row">
         <!-- nav bar -->
-        <nav class="col-12 p-md-3">
+        <nav class="col-12 p-0 p-md-3 shadow-sm">
             <section class="row">
                 <div class="col-10 col-md-3 col-lg-4 fw-bold text-dark fs-4">
                     <img class="logo-img" src="/assets/logo.png" />
-                    New Fashion
+                    <span class="d-none d-md-inline-block">New Fashion</span>
                 </div>
                 <div class="col-2 d-md-none align-self-center">
-                    <span class="material-symbols-outlined text-dark fw-bold cursor-pointer">
+                    <span class="material-symbols-outlined text-dark fw-bold cursor-pointer"
+                        (click)="toggleMobileNav()">
                         menu_open
                     </span>
                 </div>
@@ -32,4 +33,20 @@
             </section>
         </nav>
     </div>
+    <!-- mobile side navbar -->
+    <section class="position-fixed side-nav-wrapper" [ngClass]="isMobileNavOpen ? 'showNav' : 'hideNav'">
+        <div class="p-3 w-75 h-100 side-nav text-white">
+            <div class="text-end">
+                <span class="material-symbols-outlined cursor-pointer fw-bold" (click)="toggleMobileNav()">
+                    cancel
+                </span>
+            </div>
+            <div class="nav-links-container h-100 justify-content-center" (click)="toggleMobileNav()">
+                <a class="text-white nav-link" routerLinkActive="active" routerLink="/">Home</a>
+                <a class="text-white nav-link" routerLinkActive="active" routerLink="/">About</a>
+                <a class="text-white nav-link" routerLinkActive="active" routerLink="/">Contact</a>
+                <a class="text-white nav-link" routerLinkActive="active" routerLink="/">Cart</a>
+            </div>
+        </div>
+    </section>
 </section>

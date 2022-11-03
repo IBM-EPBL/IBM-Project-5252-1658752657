@@ -9,7 +9,7 @@ import { LandingBannerComponent } from './landing-banner/landing-banner.componen
 @NgModule({
   declarations: [
     HomeComponent,
-    LandingBannerComponent
+    LandingBannerComponent,
   ],
   imports: [
     CommonModule,

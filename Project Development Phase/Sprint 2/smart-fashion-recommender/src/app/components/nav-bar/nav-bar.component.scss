@@ -7,6 +7,48 @@ ul {
     margin: 0;
 }
 .logo-img {
-    width:4rem;
-    height:4rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+.nav-bar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+/* nav bar */
+.nav-links-container .nav-link {
+    line-height: 3;
+}
+
+.nav-links-container .nav-link:hover,
+.nav-links-container .nav-link.active {
+    background-color: #e2e2e2;
+    color: var(--primary-color) !important;
+}
+
+.side-nav-wrapper {
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 0;
+    z-index: 5;
+    background-color: rgba(128, 128, 128, 0.386);
+}
+.side-nav {
+    background-color: var(--primary-color);
+}
+
+.hideNav {
+    width: 0;
+    overflow: hidden;
+    transition: all 0.1s;
+}
+.showNav {
+    height: 100vh;
+    width: 100%;
+    transition: all 0.2s;
 }
