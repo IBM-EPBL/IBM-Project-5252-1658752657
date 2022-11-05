@@ -1,14 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-    --primary-color: black;
-    --secondary-color: '#c0c2c3'
+    --primary-color: #b0e6dc;
+    --secondary-color: #c0c2c3;
 }
 .cursor-pointer {
     cursor: pointer;
 }
 /* button styles */
 .primary-btn {
-    background-color: var(--primary-color);
+    background-color: black;
     color: white;
     border: 0;
     padding: 0.7rem 2.5rem;
@@ -17,8 +17,8 @@
 
 .secondary-btn {
     background-color: white;
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
+    color: black;
+    border: 1px solid black;
     padding: 0.7rem 2.5rem;
     border-radius: 10px;
 }

@@ -1,0 +1,33 @@
+.banner-text {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: "Cinzel Decorative", cursive;
+    letter-spacing: 0.7rem;
+}
+
+.main-con {
+    padding: 1rem 3rem 1rem 5rem;
+}
+
+.land-icon {
+    font-size: 3rem;
+    color: #b0e6dc;
+}
+
+.shop-btn:hover {
+    background-color: transparent !important;
+    border: 1px solid black;
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .banner-text {
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: "Cinzel Decorative", cursive;
+        letter-spacing: 0.3rem;
+    }
+    .main-con {
+        padding: 1rem;
+    }
+}
