@@ -3,6 +3,7 @@
     font-weight: bold;
     font-family: "Cinzel Decorative", cursive;
     letter-spacing: 0.7rem;
+    animation: 1s 1 slidein;
 }
 
 .main-con {
@@ -29,5 +30,16 @@
     }
     .main-con {
         padding: 1rem;
+    }
+}
+
+// animations
+@keyframes slidein {
+    from {
+        margin-left: -50%;
+    }
+
+    to {
+        margin-left: 0%;
     }
 }

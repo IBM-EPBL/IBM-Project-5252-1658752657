@@ -1,0 +1,28 @@
+<section class="row">
+    <div class="col-6 col-md-4 col-lg-3 col-xl-2" *ngFor="let i of [1,2,3,4,5,6]">
+        <div class="p-2 shadow">
+            <div class="text-center">
+                <img src="/assets/products/1.jpg" alt="product img" class="product-img">
+            </div>
+            <div>
+                <p class="title-text">Stylish Elegant Men Tshirts</p>
+                <h5>{{'120' | currency: 'INR'}}</h5>
+                <p>Free delivery</p>
+                <!-- review section -->
+                <div class="d-flex align-items-center">
+                    <div class="rating-star d-flex align-items-center bg-success text-white fw-bold p-2 rounded">
+                        <span>
+                            {{'4.0'}}
+                        </span>
+                        <span class="material-symbols-outlined text-white">
+                            star
+                        </span>
+                    </div>
+                    <div class="title-text" style="font-size: 14px;">
+                        {{'1233'}} Reviews
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
