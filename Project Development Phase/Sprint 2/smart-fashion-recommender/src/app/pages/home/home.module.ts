@@ -3,19 +3,20 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
-import { LandingBannerComponent } from './landing-banner/landing-banner.component';
 import { LandingContainerComponent } from './landing-container/landing-container.component';
-
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { HomeSliderComponent } from './home-slider/home-slider.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
-    LandingBannerComponent,
     LandingContainerComponent,
+    HomeSliderComponent,
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    CarouselModule,
   ]
 })
 export class HomeModule { }
