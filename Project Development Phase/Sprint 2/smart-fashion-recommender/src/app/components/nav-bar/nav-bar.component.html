@@ -17,16 +17,20 @@
                     <div class="row">
                         <div class="nav-items col-7 align-self-center">
                             <ul class="d-flex justify-content-around">
-                                <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink='/'>HOME</a></li>
-                                <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/about">ABOUT</a></li>
-                                <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/cart">CART</a></li>
-                                <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/contact">CONTACT</a></li>
+                                <li class="nav-item"><a class="nav-link" routerLinkActive="active"
+                                        routerLink='/'>HOME</a></li>
+                                <li class="nav-item"><a class="nav-link" routerLinkActive="active"
+                                        routerLink="/about">ABOUT</a></li>
+                                <li class="nav-item"><a class="nav-link" routerLinkActive="active"
+                                        routerLink="/cart">CART</a></li>
+                                <li class="nav-item"><a class="nav-link" routerLinkActive="active"
+                                        routerLink="/contact">CONTACT</a></li>
                             </ul>
                         </div>
                         <!-- login btn -->
                         <div class="col-5 row justify-content-around">
-                            <button class="col-5 primary-btn">Login</button>
-                            <button class="col-5 secondary-btn">Sig up</button>
+                            <button class="col-5 primary-btn" routerLink="/login">Login</button>
+                            <button class="col-5 secondary-btn" routerLink="/signup">Sig up</button>
                         </div>
                     </div>
                 </div>
@@ -46,6 +50,10 @@
                 <a class="text-dark nav-link" routerLinkActive="active" [routerLink]="['/about']">About</a>
                 <a class="text-dark nav-link" routerLinkActive="active" [routerLink]="['/contact']">Contact</a>
                 <a class="text-dark nav-link" routerLinkActive="active" [routerLink]="['/cart']">Cart</a>
+                <div>
+                    <button class="primary-btn mt-2" routerLink="/login">Login</button>
+                    <button class="secondary-btn mt-2" routerLink="/signup">Sig up</button>
+                </div>
             </div>
         </div>
     </section>

@@ -36,6 +36,10 @@ export class HomeSliderComponent implements OnInit {
       src: '/assets/home-carousel/1.jpg',
     },
     {
+      id: '5',
+      src: '/assets/home-carousel/5.jpg',
+    },
+    {
       id: '4',
       src: '/assets/home-carousel/4.webp',
     },
