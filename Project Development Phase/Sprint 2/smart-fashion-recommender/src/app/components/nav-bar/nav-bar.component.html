@@ -17,10 +17,10 @@
                     <div class="row">
                         <div class="nav-items col-7 align-self-center">
                             <ul class="d-flex justify-content-around">
-                                <li><a href="">HOME</a></li>
-                                <li><a href="">ABOUT</a></li>
-                                <li><a href="">CART</a></li>
-                                <li><a href="">CONTACT</a></li>
+                                <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink='/'>HOME</a></li>
+                                <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/about">ABOUT</a></li>
+                                <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/cart">CART</a></li>
+                                <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/contact">CONTACT</a></li>
                             </ul>
                         </div>
                         <!-- login btn -->
@@ -42,10 +42,10 @@
                 </span>
             </div>
             <div class="nav-links-container h-100 justify-content-center" (click)="toggleMobileNav()">
-                <a class="text-dark nav-link" routerLinkActive="active" routerLink="/">Home</a>
-                <a class="text-dark nav-link" routerLinkActive="active" routerLink="/">About</a>
-                <a class="text-dark nav-link" routerLinkActive="active" routerLink="/">Contact</a>
-                <a class="text-dark nav-link" routerLinkActive="active" routerLink="/">Cart</a>
+                <a class="text-dark nav-link" routerLinkActive="active" [routerLink]="['/']">Home</a>
+                <a class="text-dark nav-link" routerLinkActive="active" [routerLink]="['/about']">About</a>
+                <a class="text-dark nav-link" routerLinkActive="active" [routerLink]="['/contact']">Contact</a>
+                <a class="text-dark nav-link" routerLinkActive="active" [routerLink]="['/cart']">Cart</a>
             </div>
         </div>
     </section>
