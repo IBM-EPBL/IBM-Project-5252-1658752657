@@ -18,13 +18,13 @@
                         <div class="nav-items col-7 align-self-center">
                             <ul class="d-flex justify-content-around">
                                 <li class="nav-item"><a class="nav-link" routerLinkActive="active"
-                                        routerLink='/'>HOME</a></li>
+                                        routerLink='/' [routerLinkActiveOptions]="{exact:true}">HOME</a></li>
                                 <li class="nav-item"><a class="nav-link" routerLinkActive="active"
-                                        routerLink="/about">ABOUT</a></li>
-                                <li class="nav-item"><a class="nav-link" routerLinkActive="active"
-                                        routerLink="/cart">CART</a></li>
+                                        routerLink="/products">PRODUCTS</a></li>
                                 <li class="nav-item"><a class="nav-link" routerLinkActive="active"
                                         routerLink="/contact">CONTACT</a></li>
+                                <li class="nav-item"><a class="nav-link" routerLinkActive="active"
+                                        routerLink="/cart">CART</a></li>
                             </ul>
                         </div>
                         <!-- login btn -->
@@ -46,8 +46,9 @@
                 </span>
             </div>
             <div class="nav-links-container h-100 justify-content-center" (click)="toggleMobileNav()">
-                <a class="text-dark nav-link" routerLinkActive="active" [routerLink]="['/']">Home</a>
-                <a class="text-dark nav-link" routerLinkActive="active" [routerLink]="['/about']">About</a>
+                <a class="text-dark nav-link" routerLinkActive="active" [routerLink]="['/']"
+                    [routerLinkActiveOptions]="{exact:true}">Home</a>
+                <a class="text-dark nav-link" routerLinkActive="active" [routerLink]="['/products']">Products</a>
                 <a class="text-dark nav-link" routerLinkActive="active" [routerLink]="['/contact']">Contact</a>
                 <a class="text-dark nav-link" routerLinkActive="active" [routerLink]="['/cart']">Cart</a>
                 <div>

@@ -8,6 +8,7 @@ const routes: Routes = [
     component: AppShellComponent,
     children: [
       { path: '', loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule) },
+      { path: 'products', loadChildren: () => import('./pages/products-list/products-list.module').then(m => m.ProductsListModule) },
     ],
   },
   { path: 'login', loadChildren: () => import('./pages/login/login.module').then(m => m.LoginModule) },
