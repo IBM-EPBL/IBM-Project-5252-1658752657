@@ -1,4 +1,4 @@
-procedure to run application
+# Procedure to run application
 
 ## First navigate to the project
 
