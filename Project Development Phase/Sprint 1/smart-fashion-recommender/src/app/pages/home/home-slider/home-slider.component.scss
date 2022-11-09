@@ -1,0 +1,9 @@
+.img-fluid {
+    height: 30rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .img-fluid {
+        height: 10rem;
+    }
+}
