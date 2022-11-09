@@ -1,4 +1,4 @@
-# Procedure to run application
+# Procedure to run the Frontend application
 
 ## First navigate to the project
 
