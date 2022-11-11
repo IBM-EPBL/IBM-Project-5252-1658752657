@@ -12,7 +12,10 @@ A Smart Application that recommend products based on user preferences.
    - [Devendran V](https://github.com/IBM-EPBL/IBM-Project-5252-1658752657/tree/main/Assignments/Devendran%20V%20(Team%20Member%202))
    - [Hari Krishnan N](https://github.com/IBM-EPBL/IBM-Project-5252-1658752657/tree/main/Assignments/Hari%20Krishnan%20N%20(Team%20Member%203))
 
-- [Project Development Phase](https://github.com/IBM-EPBL/IBM-Project-5252-1658752657/tree/main/Project%20Development%20Phase)
+- Project Development Phase
+   - [Sprint 1](https://github.com/IBM-EPBL/IBM-Project-5252-1658752657/tree/main/Project%20Development%20Phase/Sprint%201)
+   - [sprint 2](https://github.com/IBM-EPBL/IBM-Project-5252-1658752657/tree/main/Project%20Development%20Phase/Sprint%202)
+ 
 
 ## Batch
 
