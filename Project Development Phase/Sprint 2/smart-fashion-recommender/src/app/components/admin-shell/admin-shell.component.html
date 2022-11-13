@@ -1,0 +1,40 @@
+<div class="container-fluid h-100">
+    <div class="row h-100 flex-nowrap">
+        <!-- nav bar -->
+        <div class="col-6 col-md-3 col-lg-2 h-100 nav-con" *ngIf="showNav">
+            <!-- logo image -->
+            <div class="fw-bold text-dark">
+                <img class="logo-img" src="/assets/logo.png" />
+                <span class="d-none d-md-inline">New Fashion</span>
+                <div class="d-md-none">
+                    <span>New Fashion</span>
+                </div>
+            </div>
+            <hr>
+            <nav class="nav-bar">
+                <ul>
+                    <li class="py-3 ps-3">Orders List</li>
+                    <li class="py-3 ps-3">Add Product</li>
+                    <li class="py-3 ps-3">Add Product</li>
+                    <li class="py-3 ps-3">Add Product</li>
+                    <li class="py-3 ps-3">Add Product</li>
+                </ul>
+            </nav>
+        </div>
+        <!-- top nav content -->
+        <div class="col-12 col-md-9 col-lg-10 p-0 flex-fill">
+            <div class="d-flex top-nav px-3 py-3 w-100 justify-content-between">
+                <div class="material-symbols-outlined cursor-pointer" (click)="toggleNav()">
+                    menu
+                </div>
+                <div>
+                    profile
+                </div>
+            </div>
+            <!-- main content of route -->
+            <main>
+                <router-outlet></router-outlet>
+            </main>
+        </div>
+    </div>
+</div>
