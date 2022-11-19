@@ -1,13 +1,13 @@
 # Smart Fashion Recommender
 
-A Smart Application that recommend products based on user preferences .
+A Smart Application that recommend products based on user preferences.
 
 ## 🔗 Links
 
 - [Project Design and Planning](https://github.com/IBM-EPBL/IBM-Project-5252-1658752657/tree/main/Project%20Design%20%26%20Planning)
 
 - Assignments
-   - [Abhishek A R](https://github.com/IBM-EPBL/IBM-Project-5252-1658752657/tree/main/Assignments/Abhishek%20A%20R%20(Team%20Lead))
+   - [Abhishek AR](https://github.com/IBM-EPBL/IBM-Project-5252-1658752657/tree/main/Assignments/Abhishek%20A%20R%20(Team%20Lead))
    - [Charan DP](https://github.com/IBM-EPBL/IBM-Project-5252-1658752657/tree/main/Assignments/Charan%20D%20P%20(Team%20Member%201)) 
    - [Devendran V](https://github.com/IBM-EPBL/IBM-Project-5252-1658752657/tree/main/Assignments/Devendran%20V%20(Team%20Member%202))
    - [Hari Krishnan N](https://github.com/IBM-EPBL/IBM-Project-5252-1658752657/tree/main/Assignments/Hari%20Krishnan%20N%20(Team%20Member%203))
