@@ -1,0 +1,15 @@
+<section class="container-fluid" *ngIf="slides.length > 0">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <owl-carousel-o [options]="customOptions">
+          <ng-container *ngFor="let slide of slides">
+            <ng-template carouselSlide [id]="slide.id">
+              <picture>
+                <img class="img-fluid" width="1440" height="300" loading="lazy" decoding="async" alt="banner image" [src]="slide?.src">
+              </picture>
+            </ng-template>
+          </ng-container>
+        </owl-carousel-o>
+      </div>
+    </div>
+  </section>

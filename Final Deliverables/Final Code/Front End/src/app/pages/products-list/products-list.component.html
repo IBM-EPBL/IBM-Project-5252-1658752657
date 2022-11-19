@@ -1,0 +1,49 @@
+<section class="container-fluid pt-3 pt-md-4">
+    <!-- search filters -->
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <div class="d-flex border">
+                <select name="category" class="border border-end-0 border-dark py-3">
+                    <option value="all">All</option>
+                    <option value="t-shirt">T-shirt</option>
+                    <option value="t-shirt">T-shirt</option>
+                    <option value="t-shirt">T-shirt</option>
+                </select>
+                <input type="text" placeholder="search" style="flex: 1;" class="border-0 py-2">
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="d-flex justify-content-around justify-content-md-end mt-3 mt-md-0">
+                <!-- chat bot -->
+                <button class="chat-btn me-md-3">Let's chat</button>
+                <!-- sort by -->
+                <select name="sort" class="border-0 py-3">
+                    <option value="">Sort by</option>
+                    <option value="low-high">Price: Low to High</option>
+                    <option value="high-low">Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- product list items -->
+    <div class="row mt-2">
+        <div class="col-12">
+            <div class="d-flex justify-content-between">
+                <p class="fw-bold">Total products : {{productsList.length}}</p>
+                <p class="d-none d-md-block">Let's make changes in buying</p>
+            </div>
+            <app-product-card [product]="productsList"></app-product-card>
+        </div>
+        <!-- pagination -->
+        <div class="col-12 mt-5 d-flex justify-content-center">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>

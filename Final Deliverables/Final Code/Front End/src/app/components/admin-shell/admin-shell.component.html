@@ -1,0 +1,51 @@
+<div class="container-fluid h-100">
+    <div class="row h-100 flex-nowrap position-fixed w-100">
+        <!-- nav bar -->
+        <div class="col-8 col-md-3 col-lg-2 h-100 nav-con" *ngIf="showNav">
+            <!-- logo image -->
+            <div class="fw-bold text-dark">
+                <img class="logo-img" src="/assets/logo.png" />
+                <span class="d-none d-md-inline">New Fashion</span>
+                <div class="d-md-none">
+                    <span>New Fashion</span>
+                </div>
+            </div>
+            <hr>
+            <nav class="nav-bar">
+                <ul>
+                    <li class="mt-2"><a class="py-3 ps-3 nav-link" routerLinkActive="active" routerLink="/admin"
+                            [routerLinkActiveOptions]="{exact:true}">Products
+                            List</a></li>
+                    <li class="mt-2"><a class="py-3 ps-3 nav-link" routerLinkActive="active" routerLink="orders"
+                            [routerLinkActiveOptions]="{exact:true}">Orders
+                            List</a></li>
+                    <li class="mt-2"><a class="py-3 ps-3 nav-link" routerLinkActive="active" routerLink="category"
+                            [routerLinkActiveOptions]="{exact:true}">Category
+                            List</a></li>
+                    <li class="mt-2"><a class="py-3 ps-3 nav-link" routerLinkActive="active" routerLink="add-product"
+                            [routerLinkActiveOptions]="{exact:true}">Add
+                            Products</a></li>
+                    <li class="mt-2 position-fixed bottom-0 mb-4"><a class="py-3 px-3 px-md-5 nav-link border border-dark" (click)="logout()"><span
+                                class="material-symbols-outlined" style="vertical-align: bottom;">
+                                logout
+                            </span> <span class="ms-3">Log Out</span></a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- top nav content -->
+        <div class="col-12 col-md-9 col-lg-10 p-0 flex-fill overflow-scroll">
+            <div class="d-flex top-nav px-3 py-3 w-100 justify-content-between">
+                <div class="material-symbols-outlined cursor-pointer" (click)="toggleNav()">
+                    menu
+                </div>
+                <div>
+                    profile
+                </div>
+            </div>
+            <!-- main content of route -->
+            <main class="p-1 p-md-3">
+                <router-outlet></router-outlet>
+            </main>
+        </div>
+    </div>
+</div>

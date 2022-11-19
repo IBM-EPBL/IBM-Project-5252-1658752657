@@ -1,0 +1,34 @@
+<section class="container">
+    <div class="row">
+        <div class="d-flex justify-content-between">
+            <h5>ORDERS LIST</h5>
+            <p class="fw-bold">Total orders {{'343'}}</p>
+        </div>
+        <hr>
+        <!-- orders list -->
+        <div class="col-12">
+            <div class="table-responsive">
+                <table class="table table-striped table-hover table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">User Name</th>
+                            <th scope="col">Product Name</th>
+                            <th scope="col">Product Price</th>
+                            <th scope="col">Order Date</th>
+                        </tr>
+                    </thead>
+                    <tbody class="align-middle">
+                        <tr *ngFor="let t of [1,1,1,1,1,1,1,1,1], index as i">
+                            <th scope="row">{{i+1}}</th>
+                            <td>Devendran</td>
+                            <td>Dress</td>
+                            <td>{{'322' | currency: 'INR'}}</td>
+                            <td>{{'27-08-2022'}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,23 @@
+<section class="container">
+    <div class="row">
+        <h4>Add new product</h4>
+        <hr>
+        <form class="col-12 col-md-6" [formGroup]="addProductForm" (ngSubmit)="createProduct()">
+            <input type="text" class="form-input w-100" placeholder="product name" formControlName="product_name">
+            <textarea type="text" class="form-input w-100" placeholder="Description" formControlName="description"></textarea>
+            <input type="number" class="form-input w-100" placeholder="Price" min="1" formControlName="price">
+            <input type="number" class="form-input w-100" placeholder="Stock" min="1" formControlName="stock">
+            <select name="category" class="form-input w-100 py-3" formControlName="category">
+                <option value="">Select Category</option>
+                <option [value]="c.ID" *ngFor="let c of categoryList">{{c.CATEGORY_NAME}}</option>
+            </select>
+            <div>
+                <button class="primary-btn" type="submit">Add Product</button>
+            </div>
+        </form>
+        <!-- <div class="col-12 col-md-6 text-center">
+            <p>select product image</p>
+            <img src="/assets/products/4.jpg" alt="Product image" class="product-img">
+        </div> -->
+    </div>
+</section>

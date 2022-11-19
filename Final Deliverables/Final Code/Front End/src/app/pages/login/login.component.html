@@ -1,0 +1,31 @@
+<section class="container-fluid h-100 login-container">
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-12 col-md-6 d-none d-md-block"></div>
+        <div class="col-12 d-flex justify-content-center col-md-6">
+            <div class="login-form-container p-3">
+                <h2 class="mb-4 login-text"><img class="login-logo-img" src="/assets/logo.png" alt="logo">Login</h2>
+                <form [formGroup]="loginForm" (ngSubmit)="login()">
+                    <div>
+                        <input type="email" class="login-input" placeholder="Email" formControlName="email">
+                    </div>
+                    <div>
+                        <input type="password" class="login-input" placeholder="password" formControlName="password">
+                    </div>
+                    <p class="text-center" style="font-size: 10px;">
+                        By login, you agree to our Terms of Use and Privacy Policy.
+                    </p>
+                    <span class="text-danger" style="font-size: 12px;">{{invalidDetails}}</span>
+                    <div class="text-center">
+                        <button class="primary-btn" type="submit" [disabled]="this.loginForm.invalid"
+                            routerLink="/">Login <div *ngIf="loding" class="spinner-border text-light ms-3" style="vertical-align: bottom;" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div></button>
+                    </div>
+                    <!-- new account -->
+                    <p class="text-center mt-3">New to Fashion <a routerLink="/signup"
+                            class="text-decoration-none">Create an account</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

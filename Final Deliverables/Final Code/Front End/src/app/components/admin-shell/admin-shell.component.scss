@@ -1,0 +1,32 @@
+.nav-con, .top-nav {
+    background-color: var(--primary-color);
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.nav-bar > ul {
+    list-style: none;
+    font-weight: bold;
+}
+
+.nav-bar a {
+    border-radius: 10px;
+}
+
+.top-nav {
+    position: fixed;
+    top: 0;
+}
+main {
+    margin-top: 60px;
+}
+.nav-link:hover,
+.nav-link.active {
+    background-color: white;
+}
+
+.logo-img {
+    width: 4rem;
+    height: 4rem;
+}

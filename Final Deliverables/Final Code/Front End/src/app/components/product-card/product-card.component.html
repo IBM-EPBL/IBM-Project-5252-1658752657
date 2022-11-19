@@ -1,0 +1,28 @@
+<section class="row">
+    <div class="col-6 col-md-4 col-lg-3 col-xl-2" *ngFor="let p of product, index as i">
+        <div class="p-2 shadow pro-card" [routerLink]="['/products/',p.PRODUCT_ID]">
+            <div class="text-center">
+                <img src="{{BASE_URL}}{{p.IMAGE}}" alt="product img" class="product-img" loading="lazy" decoding="async">
+            </div>
+            <div>
+                <p class="title-text">{{p.PRODUCT_NAME}}</p>
+                <h5>{{p.PRICE | currency: 'INR'}}</h5>
+                <p>{{'Free Delivery'}}</p>
+                <!-- review section -->
+                <div class="d-flex align-items-center">
+                    <div class="rating-star d-flex align-items-center bg-success text-white fw-bold px-2 rounded">
+                        <span>
+                            {{'4.2'}}
+                        </span>
+                        <span class="material-symbols-outlined text-white ms-2 fs-6">
+                            star
+                        </span>
+                    </div>
+                    <div class="title-text ms-1" style="font-size: 14px;">
+                        {{'63'}} Reviews
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

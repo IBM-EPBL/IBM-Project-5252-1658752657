@@ -1,0 +1,57 @@
+<section class="container">
+    <div class="row">
+        <div class="d-flex justify-content-between mb-3">
+            <h5>CATEGORY LIST</h5>
+            <div class="position-relative">
+                <button class="primary-btn" (click)="toggleAddCategory()">Add
+                    Category</button>
+                <span class="position-absolute add-category-card shadow border text-success"
+                    *ngIf="successMessage !== ''">{{successMessage}}</span>
+                <!-- add category -->
+                <form class="position-absolute add-category-card shadow border" *ngIf="showAddCategory"
+                    [formGroup]="addCategory" (ngSubmit)="createCategory()">
+                    <input type="text" placeholder="New Category Name" class="form-input" formControlName="category">
+                    <div class="text-center">
+                        <button class="secondary-btn" type="submit" style="background-color: var(--primary-color);"
+                            [disabled]="this.addCategory.invalid">Create</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <!-- orders list -->
+        <div  *ngIf="categoryList.length === 0">
+            Loading
+            <div class="spinner-border text-dark ms-3" style="vertical-align: bottom;" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <div class="col-12" *ngIf="categoryList.length > 0">
+            <div class="table-responsive">
+                <!-- table -->
+                <table class="table table-striped table-hover table-bordered w-auto">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody class="align-middle">
+                        <tr *ngFor="let t of categoryList, index as i">
+                            <th scope="row">{{i+1}}</th>
+                            <td>{{t.CATEGORY_NAME}}</td>
+                            <td>
+                                <span class="material-symbols-outlined cursor-pointer text-danger"
+                                    (click)="deleteCategory(t.ID)">
+                                    delete
+                                </span>
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

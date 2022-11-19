@@ -1,0 +1,46 @@
+<section class="container-fluid">
+    <div class="row">
+        <div class="d-flex justify-content-between">
+            <h5>PRODUCTS LIST</h5>
+            <p class="fw-bold">Total products {{'343'}}</p>
+        </div>
+        <hr>
+            <div  *ngIf="productsList.length === 0">
+                Loading
+                <div class="spinner-border text-dark ms-3" style="vertical-align: bottom;" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        <!-- list of products -->
+        <div class="col-12" *ngIf="productsList.length > 0">
+            <div class="table-responsive">
+                <table class="table table-striped table-hover table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Product Name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody class="align-middle">
+                        <tr *ngFor="let p of productsList, index as i">
+                            <th scope="row">{{i+1}}</th>
+                            <td><img src="{{BASE_URL}}{{p.IMAGE}}" alt="Product image" class="product-img" /></td>
+                            <td>{{p.PRODUCT_NAME}}</td>
+                            <td>{{p.DESCRIPTION}}</td>
+                            <td>{{p.PRICE | currency: 'INR'}}</td>
+                            <td>
+                                <span class="material-symbols-outlined cursor-pointer text-danger">
+                                    delete
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,58 @@
+<section class="container-fluid nav-bar">
+    <div class="row">
+        <!-- nav bar -->
+        <nav class="col-12 p-0 p-md-3 pb-0 shadow-sm">
+            <section class="row">
+                <div class="col-10 col-md-3 col-lg-4 fw-bold text-dark fs-4">
+                    <img class="logo-img" src="/assets/logo.png" />
+                    <span>New Fashion</span>
+                </div>
+                <div class="col-2 d-md-none align-self-center">
+                    <span class="material-symbols-outlined text-dark fw-bold cursor-pointer"
+                        (click)="toggleMobileNav()">
+                        menu_open
+                    </span>
+                </div>
+                <div class="col-12 col-md-9 col-lg-8 d-none d-md-block">
+                    <div class="row">
+                        <div class="nav-items col-7 align-self-center">
+                            <ul class="d-flex">
+                                <li class="nav-item px-3"><a class="nav-link" routerLinkActive="active" routerLink='/'
+                                        [routerLinkActiveOptions]="{exact:true}">HOME</a></li>
+                                <li class="nav-item px-3"><a class="nav-link" routerLinkActive="active"
+                                        routerLink="/products">PRODUCTS</a></li>
+                                <li class="nav-item px-3"><a class="nav-link" routerLinkActive="active"
+                                        routerLink="/cart">CART</a></li>
+                            </ul>
+                        </div>
+                        <!-- login btn -->
+                        <div class="col-5 row justify-content-end">
+                            <button class="col-5 primary-btn" (click)="logOut()">Log Out</button>
+                            <!-- <button class="col-5 secondary-btn" routerLink="/signup">Sig up</button> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </nav>
+    </div>
+    <!-- mobile side navbar -->
+    <section class="position-fixed side-nav-wrapper" [ngClass]="isMobileNavOpen ? 'showNav' : 'hideNav'">
+        <div class="p-3 w-75 h-100 side-nav text-dark">
+            <div class="text-end">
+                <span class="material-symbols-outlined cursor-pointer fw-bold" (click)="toggleMobileNav()">
+                    cancel
+                </span>
+            </div>
+            <div class="nav-links-container h-100 justify-content-center" (click)="toggleMobileNav()">
+                <a class="text-dark nav-link" routerLinkActive="active" [routerLink]="['/']"
+                    [routerLinkActiveOptions]="{exact:true}">Home</a>
+                <a class="text-dark nav-link" routerLinkActive="active" [routerLink]="['/products']">Products</a>
+                <a class="text-dark nav-link" routerLinkActive="active" [routerLink]="['/contact']">Contact</a>
+                <a class="text-dark nav-link" routerLinkActive="active" [routerLink]="['/cart']">Cart</a>
+                <div>
+                    <button class="primary-btn mt-2" (click)="logOut()">Log Out</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

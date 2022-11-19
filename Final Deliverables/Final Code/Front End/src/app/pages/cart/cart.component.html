@@ -1,0 +1,26 @@
+<section class="container mt-3 pt-3 pt-md-4">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <div class="shadow p-2 mt-3" *ngFor="let t of [1,1,1,1,1]">
+                <div class="d-flex align-items-center">
+                    <img src="/assets/products/2.jpg" alt="Product image" class="product-img" />
+                    <p class="fw-bold ms-2">Title of the image</p>
+                </div>
+                <p>Price : {{344 | currency:'INR'}}</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <h3>Total Cart Details</h3>
+            <hr>
+            <div>
+                <p>Total items : {{5}}</p>
+                <p *ngFor="let t of [1,1,1,1,1], index as i">Item : {{i + 1}} = {{63 | currency:'INR'}}</p>
+                <p>TOTAL PRICE : {{5464 | currency:"INR"}}</p>
+                <hr>
+                <div class="col-12 col-md-6">
+                    <button class="primary-btn mt-2 w-100">PROCEDURE TO BUY</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
