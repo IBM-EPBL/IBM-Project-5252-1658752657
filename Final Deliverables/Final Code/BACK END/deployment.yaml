@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-dep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myproj
+  template:
+    metadata:
+      labels:
+        app: myproj
+    spec:
+      containers:
+        - name: myproj
+          image: jp.icr.io/smart/smart-fashion
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
